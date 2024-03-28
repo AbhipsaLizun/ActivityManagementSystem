@@ -13,8 +13,7 @@ class InspectionForm3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-   Section3Controller section3controller = Get.put(Section3Controller());
+    Section3Controller section3controller = Get.put(Section3Controller());
 
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 236, 236, 236),
@@ -63,7 +62,7 @@ class InspectionForm3 extends StatelessWidget {
                                   const DataColumn(
                                       label: Expanded(
                                     child: Text(
-                                      'Particulars',
+                                      'Particulars ',
                                       style: TextStyle(
                                           fontSize: 14,
                                           fontStyle: FontStyle.normal),
@@ -89,7 +88,8 @@ class InspectionForm3 extends StatelessWidget {
                                               fontStyle: FontStyle.normal),
                                         ),
                                         TableFormInputFieldOne(
-                                          controller: section3controller.memHeadingDate1,
+                                          controller: section3controller
+                                              .memHeadingDate1,
                                         ),
                                       ],
                                     ),
@@ -105,7 +105,8 @@ class InspectionForm3 extends StatelessWidget {
                                               fontStyle: FontStyle.normal),
                                         ),
                                         TableFormInputFieldOne(
-                                          controller: section3controller.memHeadingDate2,
+                                          controller: section3controller
+                                              .memHeadingDate2,
                                         ),
                                       ],
                                     ),
@@ -121,7 +122,8 @@ class InspectionForm3 extends StatelessWidget {
                                               fontStyle: FontStyle.normal),
                                         ),
                                         TableFormInputFieldOne(
-                                          controller: section3controller.memHeadingDate3,
+                                          controller: section3controller
+                                              .memHeadingDate3,
                                         ),
                                       ],
                                     ),
@@ -144,7 +146,8 @@ class InspectionForm3 extends StatelessWidget {
                                   DataRow(cells: <DataCell>[
                                     const DataCell(Text('SC')),
                                     DataCell(TableFormInputFieldTwo(
-                                      areaController: section3controller.memAreaField1,
+                                      areaController:
+                                          section3controller.memAreaField1,
                                     )),
                                     DataCell(TableFormInputFieldOne(
                                       controller: section3controller.memField1,
@@ -164,7 +167,8 @@ class InspectionForm3 extends StatelessWidget {
                                   DataRow(cells: <DataCell>[
                                     const DataCell(Text('ST')),
                                     DataCell(TableFormInputFieldTwo(
-                                      areaController: section3controller.memAreaField2,
+                                      areaController:
+                                          section3controller.memAreaField2,
                                     )),
                                     DataCell(TableFormInputFieldOne(
                                       controller: section3controller.memField5,
@@ -184,7 +188,8 @@ class InspectionForm3 extends StatelessWidget {
                                   DataRow(cells: <DataCell>[
                                     const DataCell(Text('O.B.C')),
                                     DataCell(TableFormInputFieldTwo(
-                                      areaController: section3controller.memAreaField3,
+                                      areaController:
+                                          section3controller.memAreaField3,
                                     )),
                                     DataCell(TableFormInputFieldOne(
                                       controller: section3controller.memField9,
@@ -204,7 +209,8 @@ class InspectionForm3 extends StatelessWidget {
                                   DataRow(cells: <DataCell>[
                                     const DataCell(Text('TOTAL')),
                                     DataCell(TableFormInputFieldTwo(
-                                      areaController: section3controller.memAreaField4,
+                                      areaController:
+                                          section3controller.memAreaField4,
                                     )),
                                     DataCell(TableFormInputFieldOne(
                                       controller: section3controller.memField13,
@@ -236,9 +242,10 @@ class InspectionForm3 extends StatelessWidget {
                           conText:
                               "1) What percentage does the membership work out to the number of families in the area?"),
                     ),
-                    TableFormInputFieldTwo(areaController: section3controller.memQuesField1),
+                    TableFormInputFieldTwo(
+                        areaController: section3controller.memQuesField1),
                     const SizedBox(
-                      height: 10,
+                      height: 12,
                     ),
                     const SizedBox(
                       // height: 45,
@@ -246,7 +253,8 @@ class InspectionForm3 extends StatelessWidget {
                           conText:
                               "2) Comment on the increase/ decrease in the membership of the Society including membership during the last two years with special reference to small and marginal farmers in the area of operation of the Society."),
                     ),
-                    TableFormInputFieldTwo(areaController: section3controller.memQuesField2),
+                    TableFormInputFieldTwo(
+                        areaController: section3controller.memQuesField2),
                     const SizedBox(
                       height: 10,
                     ),
@@ -256,7 +264,8 @@ class InspectionForm3 extends StatelessWidget {
                           conText:
                               "3) Comment on the steps taken to increase the total as well as borrowing membership of the Society to increase the credit flow to the agriculture sector."),
                     ),
-                    TableFormInputFieldTwo(areaController: section3controller.memQuesField3),
+                    TableFormInputFieldTwo(
+                        areaController: section3controller.memQuesField3),
                     const SizedBox(
                       height: 10,
                     ),
@@ -266,7 +275,8 @@ class InspectionForm3 extends StatelessWidget {
                           conText:
                               "4) What percentage does the membership work out to the number of families in the area?"),
                     ),
-                    TableFormInputFieldTwo(areaController: section3controller.memQuesField4),
+                    TableFormInputFieldTwo(
+                        areaController: section3controller.memQuesField4),
                     const SizedBox(
                       height: 10,
                     ),
@@ -276,7 +286,8 @@ class InspectionForm3 extends StatelessWidget {
                           conText:
                               "5) Comment on the increase/ decrease in the membership of the Society including membership during the last two years with special reference to small and marginal farmers in the area of operation of the Society."),
                     ),
-                    TableFormInputFieldTwo(areaController: section3controller.memQuesField5),
+                    TableFormInputFieldTwo(
+                        areaController: section3controller.memQuesField5),
                     const SizedBox(
                       height: 10,
                     ),
@@ -286,7 +297,8 @@ class InspectionForm3 extends StatelessWidget {
                           conText:
                               "6) Comment on the steps taken to increase the total as well as borrowing membership of the Society to increase the credit flow to the agriculture sector."),
                     ),
-                    TableFormInputFieldTwo(areaController: section3controller.memQuesField6),
+                    TableFormInputFieldTwo(
+                        areaController: section3controller.memQuesField6),
                     const SizedBox(
                       height: 10,
                     ),
@@ -296,7 +308,8 @@ class InspectionForm3 extends StatelessWidget {
                           conText:
                               "7) What was the target fixed for the current year for admission of new members and the achievement there against?"),
                     ),
-                    TableFormInputFieldTwo(areaController: section3controller.memQuesField7),
+                    TableFormInputFieldTwo(
+                        areaController: section3controller.memQuesField7),
                     const SizedBox(
                       height: 10,
                     ),
@@ -332,7 +345,8 @@ class InspectionForm3 extends StatelessWidget {
                           conText:
                               "9) In case of reduction in borrowing members over the years, indicate the reasons therefore (facts like shrinkage in cultivable land due to conversion of land for housing purpose, loan left fallow due to inadequate irrigation source, farmers moving to other banks/ for private money lenders, activity not viable due to subdivision and from fragmentation etc."),
                     ),
-                    TableFormInputFieldTwo(areaController: section3controller.memQuesField9),
+                    TableFormInputFieldTwo(
+                        areaController: section3controller.memQuesField9),
                     const SizedBox(
                       height: 10,
                     ),
@@ -342,7 +356,8 @@ class InspectionForm3 extends StatelessWidget {
                           conText:
                               "10) Whether rural artisans, share croppers, tenants etc. were also enrolled as members and financed by the Society with a view to achieve integrated rural development and if so, details may be furnished."),
                     ),
-                    TableFormInputFieldTwo(areaController: section3controller.memQuesField10),
+                    TableFormInputFieldTwo(
+                        areaController: section3controller.memQuesField10),
                     const SizedBox(
                       height: 10,
                     ),
@@ -352,23 +367,22 @@ class InspectionForm3 extends StatelessWidget {
                           conText:
                               "11) Details of members covered and financed under poverty alleviation program i.e. SGSY. and other special programs/ schemes for weaker sections including the impact on the quantity of their life may be highlighted."),
                     ),
-                    TableFormInputFieldTwo(areaController: section3controller.memQuesField11),
+                    TableFormInputFieldTwo(
+                        areaController: section3controller.memQuesField11),
                     const SizedBox(
                       height: 10,
                     ),
-
                     SizedBox(
                       height: ScreenSize.height(context) * 0.05,
                     ),
                     Align(
-                      alignment: Alignment.center,
-                       child: SaveBtn(
-                        pressed: () {
-                          Get.toNamed('/InspectionForm4');
-                        },
-                      )
-                    ),
-                     const SizedBox(
+                        alignment: Alignment.center,
+                        child: SaveBtn(
+                          pressed: () {
+                            Get.toNamed('/InspectionForm4');
+                          },
+                        )),
+                    const SizedBox(
                       height: 10,
                     ),
                   ],

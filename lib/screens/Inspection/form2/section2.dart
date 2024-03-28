@@ -34,7 +34,7 @@ class InspectionForm2 extends StatelessWidget {
                     fontSize: 15, fontWeight: FontWeight.w500),
               ),
               const SizedBox(
-                height: 10,
+                height: 20,
               ),
               Padding(
                 padding: const EdgeInsets.all(5.0),
@@ -506,7 +506,7 @@ class InspectionForm2 extends StatelessWidget {
                         const Expanded(
                           child: ConditionHeading(
                             conText:
-                                "Increase  in Share Capital  with reference to share linking with issue of fresh loans may also be examined and commented.",
+                                "Increase in Share Capital with reference to share linking with issue of fresh loans may also be examined and commented.",
                           ),
                         ),
                         const SizedBox(
