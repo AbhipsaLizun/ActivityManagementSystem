@@ -7,12 +7,12 @@ import '../form1/form_input_field.dart';
 import 'controller/section2_controller.dart';
 
 class InspectionForm2 extends StatelessWidget {
-   const InspectionForm2({super.key});
+  const InspectionForm2({super.key});
 
   @override
   Widget build(BuildContext context) {
-   Section2Controller section2controller = Get.put(Section2Controller());
-   
+    Section2Controller section2controller = Get.put(Section2Controller());
+
     var fieldmargin = const EdgeInsets.symmetric(vertical: 5);
     return Scaffold(
       appBar: Appbar(context, "SECTION 2"),
@@ -108,87 +108,85 @@ class InspectionForm2 extends StatelessWidget {
                                 ),
                               ],
                               rows: <DataRow>[
-                                 //..............Row 1 ...............//
+                                //..............Row 1 ...............//
                                 DataRow(
                                   cells: <DataCell>[
                                     const DataCell(Text('(a) Members Share')),
-                                    DataCell(
-                                      Container(
-                                      width: 120,
-                                      height: 40,
-                                      margin: fieldmargin,
-                                      decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextField(
-                                        controller: section2controller.mShareController1,
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none
-                                        ),
-                                      ),
-                                    ),
-                                    )
-                                    ),
                                     DataCell(Container(
                                       width: 120,
                                       height: 40,
                                       margin: fieldmargin,
                                       decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextField(
-                                        controller: section2controller.mShareController2,
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextField(
+                                          controller: section2controller
+                                              .mShareController1,
+                                          decoration: const InputDecoration(
+                                              border: InputBorder.none),
                                         ),
                                       ),
-                                    ),
                                     )),
                                     DataCell(Container(
                                       width: 120,
                                       height: 40,
                                       margin: fieldmargin,
                                       decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextField(
-                                        controller: section2controller.mShareController3,
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextField(
+                                          controller: section2controller
+                                              .mShareController2,
+                                          decoration: const InputDecoration(
+                                              border: InputBorder.none),
                                         ),
                                       ),
-                                    ),
                                     )),
                                     DataCell(Container(
                                       width: 120,
                                       height: 40,
                                       margin: fieldmargin,
                                       decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextField(
-                                        controller: section2controller.mShareController4,
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextField(
+                                          controller: section2controller
+                                              .mShareController3,
+                                          decoration: const InputDecoration(
+                                              border: InputBorder.none),
                                         ),
                                       ),
-                                    ),
+                                    )),
+                                    DataCell(Container(
+                                      width: 120,
+                                      height: 40,
+                                      margin: fieldmargin,
+                                      decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextField(
+                                          controller: section2controller
+                                              .mShareController4,
+                                          decoration: const InputDecoration(
+                                              border: InputBorder.none),
+                                        ),
+                                      ),
                                     )),
                                   ],
                                 ),
-                                 //..............Row 2 ...............//
+                                //..............Row 2 ...............//
                                 DataRow(
                                   cells: <DataCell>[
                                     const DataCell(Text('(b) Govt. Share')),
@@ -197,72 +195,72 @@ class InspectionForm2 extends StatelessWidget {
                                       height: 40,
                                       margin: fieldmargin,
                                       decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextField(
-                                        controller: section2controller.gShareController1,
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextField(
+                                          controller: section2controller
+                                              .gShareController1,
+                                          decoration: const InputDecoration(
+                                              border: InputBorder.none),
                                         ),
                                       ),
-                                    ),
                                     )),
                                     DataCell(Container(
                                       width: 120,
                                       height: 40,
                                       margin: fieldmargin,
                                       decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextField(
-                                        controller: section2controller.gShareController2,
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextField(
+                                          controller: section2controller
+                                              .gShareController2,
+                                          decoration: const InputDecoration(
+                                              border: InputBorder.none),
                                         ),
                                       ),
-                                    ),
                                     )),
                                     DataCell(Container(
                                       width: 120,
                                       height: 40,
                                       margin: fieldmargin,
                                       decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextField(
-                                        controller: section2controller.gShareController3,
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextField(
+                                          controller: section2controller
+                                              .gShareController3,
+                                          decoration: const InputDecoration(
+                                              border: InputBorder.none),
                                         ),
                                       ),
-                                    ),
                                     )),
                                     DataCell(Container(
                                       width: 120,
-                                     height: 40,
-                                     margin: fieldmargin,
+                                      height: 40,
+                                      margin: fieldmargin,
                                       decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextField(
-                                        controller: section2controller.gShareController4,
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextField(
+                                          controller: section2controller
+                                              .gShareController4,
+                                          decoration: const InputDecoration(
+                                              border: InputBorder.none),
                                         ),
                                       ),
-                                    ),
                                     )),
                                   ],
                                 ),
@@ -272,87 +270,85 @@ class InspectionForm2 extends StatelessWidget {
                                     const DataCell(Text('Total')),
                                     DataCell(Container(
                                       width: 120,
-                                     // height: 40,
+                                      // height: 40,
                                       margin: fieldmargin,
                                       decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextField(
-                                        controller: section2controller.totalController1,
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextField(
+                                          controller: section2controller
+                                              .totalController1,
+                                          decoration: const InputDecoration(
+                                              border: InputBorder.none),
                                         ),
                                       ),
-                                    ),
                                     )),
                                     DataCell(Container(
                                       width: 120,
                                       height: 40,
                                       margin: fieldmargin,
                                       decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextField(
-                                        controller: section2controller.totalController2,
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextField(
+                                          controller: section2controller
+                                              .totalController2,
+                                          decoration: const InputDecoration(
+                                              border: InputBorder.none),
                                         ),
                                       ),
-                                    ),
                                     )),
                                     DataCell(Container(
                                       width: 120,
                                       height: 40,
                                       margin: fieldmargin,
                                       decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextField(
-                                        controller: section2controller.totalController3,
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextField(
+                                          controller: section2controller
+                                              .totalController3,
+                                          decoration: const InputDecoration(
+                                              border: InputBorder.none),
                                         ),
                                       ),
-                                    ),
                                     )),
                                     DataCell(Container(
                                       width: 120,
                                       height: 40,
                                       margin: fieldmargin,
                                       decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.circular(5)
-                                    ),
-                                    child:  Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: TextField(
-                                        controller: section2controller.totalController4,
-                                        decoration: const InputDecoration(
-                                          border: InputBorder.none
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(5)),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: TextField(
+                                          controller: section2controller
+                                              .totalController4,
+                                          decoration: const InputDecoration(
+                                              border: InputBorder.none),
                                         ),
                                       ),
-                                    ),
                                     )),
                                   ],
                                 ),
-
                               ],
                             ),
                           ),
-                        )
-                        ),
-                        const SizedBox(
-                          height: 15,
-                        ),
+                        )),
+                    const SizedBox(
+                      height: 15,
+                    ),
                     //...........Condition Row 1............//
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -510,7 +506,7 @@ class InspectionForm2 extends StatelessWidget {
                         const Expanded(
                           child: ConditionHeading(
                             conText:
-                                "Increase in Share Capital with reference to share linking with issue of fresh loans may also be examined and commented.",
+                                "Increase  in Share Capital  with reference to share linking with issue of fresh loans may also be examined and commented.",
                           ),
                         ),
                         const SizedBox(
@@ -525,18 +521,16 @@ class InspectionForm2 extends StatelessWidget {
                         ),
                       ],
                     ),
-                  SizedBox(
+                    SizedBox(
                       height: MediaQuery.of(context).size.height * 0.10,
                     ),
                     Align(
-                      alignment: Alignment.center,
-                       child: SaveBtn(
-                        pressed: () {
-                          Get.toNamed('/InspectionForm3');
-                        },
-                      )
-                    )
-                  
+                        alignment: Alignment.center,
+                        child: SaveBtn(
+                          pressed: () {
+                            Get.toNamed('/InspectionForm3');
+                          },
+                        ))
                   ],
                 ),
               )
